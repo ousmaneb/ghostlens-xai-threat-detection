@@ -46,20 +46,21 @@ ghostlens-xai-threat-detection/
 ```bash
 git clone https://github.com/yourusername/ghostlens-xai-threat-detection.git
 cd ghostlens-xai-threat-detection
-Set up your environment
 
+## Set up your environment\
 python -m venv venv
 .\venv\Scripts\activate   # Windows
-Install dependencies
 
+## Install dependencies
 pip install -r requirements.txt
+
 Or, if requirements.txt doesn't exist yet:
-
 pip install pandas numpy matplotlib scikit-learn shap lime
-Launch Jupyter
 
+## Launch Jupyter
 jupyter notebook
-Roadmap
+
+## Roadmap
  Load and clean dataset
 
  Analyze label distribution and feature types
@@ -74,8 +75,8 @@ Roadmap
 
  Build lightweight web app (Streamlit or Flask)
 
-License
+## License
 
 
-Author
+## Author
 Ousmane Barry, PhD
