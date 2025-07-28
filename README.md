@@ -61,7 +61,7 @@ cd ghostlens-xai-threat-detection
 ### 2. Set up your environment
 python -m venv venv
 .\venv\Scripts\activate        # On Windows
-# Or: source venv/bin/activate  # On macOS/Linux
+Or: source venv/bin/activate  # On macOS/Linux
 
 ### 3. Install dependencies
 
@@ -84,7 +84,7 @@ Add a real-time detection prototype using packet capture tools
 Package as a CLI tool or microservice for SOC use
 
 
-Author
-Ousmane Barry, PhD
-Cybersecurity | AI/ML
+#### Author
+#### Ousmane Barry, PhD
+#### Cybersecurity | AI/ML
 
