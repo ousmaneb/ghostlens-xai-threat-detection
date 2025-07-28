@@ -39,14 +39,14 @@ This file contains labeled network flow records, including both benign and DDoS 
 
 ## Project Structure
 
-ghostlens-xai-threat-detection/
-│
-├── data/ # Raw dataset (not pushed to GitHub)
-├── notebooks/ # Data exploration and model training
-├── models/ # Trained model (.pkl) and feature list (.json)
-├── app.py # Streamlit app for prediction
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+ghostlens-xai-threat-detection/  
+│  
+├── data/ # Raw dataset (not pushed to GitHub)  
+├── notebooks/ # Data exploration and model training  
+├── models/ # Trained model (.pkl) and feature list (.json)  
+├── app.py # Streamlit app for prediction  
+├── requirements.txt # Python dependencies  
+└── README.md # Project documentation 
 
 
 ---
@@ -78,13 +78,13 @@ Then open your browser at http://localhost:8501
 To deploy online, you can use Streamlit Community Cloud. It's free, quick to set up, and perfect for showcasing projects like this.
 
 ## Next Steps
-Expand support for other attack types in CICIDS2017
-Improve explanation modules with SHAP visualizations
-Add a real-time detection prototype using packet capture tools
-Package as a CLI tool or microservice for SOC use
+1. Expand support for other attack types in CICIDS2017
+2. Improve explanation modules with SHAP visualizations
+3. Add a real-time detection prototype using packet capture tools
+4. Package as a CLI tool or microservice for SOC use
 
 
-#### Author
-#### Ousmane Barry, PhD
-#### Cybersecurity | AI/ML
+## Author
+### Ousmane Barry, PhD
+Cybersecurity | AI/ML
 
