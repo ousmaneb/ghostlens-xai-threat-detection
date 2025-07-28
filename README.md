@@ -1,75 +1,94 @@
 # GhostLens: Explainable AI for Threat Detection
 
-**GhostLens** is an open-source tool that leverages machine learning and explainable AI to detect and interpret network threats in real time. It's designed for cybersecurity analysts and engineers who need not only accurate threat detection but also clear insights into how decisions are made.
+GhostLens is an open-source tool that combines machine learning and explainable AI (XAI) to detect and interpret cybersecurity threats in real time. It’s designed to support analysts who need clarity and confidence in what the model sees — not just predictions, but reasons.
 
-This project showcases applied skills in machine learning, cybersecurity, and model interpretability.
+This project is part of a growing portfolio focused on practical applications of AI and machine learning in cybersecurity.
+
+---
 
 ## What It Does
 
-- Detects anomalies in real network traffic using supervised ML
-- Explains detection results using SHAP, LIME, and interpretable models
-- Visualizes insights and feature importance for better analysis
-- Focuses on real-world attack types, such as DDoS and port scans
+- Detects anomalies in labeled network traffic data using a supervised machine learning model (Random Forest)
+- Supports clear explanations using SHAP and interpretable models
+- Visualizes predictions and key insights for analysts
+- Focuses on real-world attack types such as DDoS and benign flows
+
+---
 
 ## Dataset
 
-This project uses the [CICIDS2017](https://www.unb.ca/cic/datasets/ids-2017.html) dataset, specifically:
+We use a subset of the [CICIDS2017](https://www.unb.ca/cic/datasets/ids-2017.html) dataset:
 
 - `Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv`
 
-The dataset includes labeled network traffic for multiple attack types, including Distributed Denial of Service (DDoS).
+This file contains labeled network flow records, including both benign and DDoS traffic.
 
-## Key Technologies
+---
 
-- Python 3
-- Pandas, NumPy, Matplotlib
+## Technologies
+
+- **Python 3**
+- Pandas, NumPy, Matplotlib, Seaborn
 - Scikit-learn
 - SHAP, LIME
+- Streamlit (for deployment)
 - Jupyter Notebooks
 - Git, GitHub
 
+---
+
 ## Project Structure
+
 ghostlens-xai-threat-detection/
-├── data/ # Dataset files (CICIDS2017)
-├── notebooks/ # Jupyter notebooks for exploration and modeling
-├── models/ # Trained models (to be added)
-├── reports/ # Visualizations and analysis
-├── ghostlens/ # Core source code (planned)
-├── requirements.txt # Dependencies
-└── README.md
+│
+├── data/ # Raw dataset (not pushed to GitHub)
+├── notebooks/ # Data exploration and model training
+├── models/ # Trained model (.pkl) and feature list (.json)
+├── app.py # Streamlit app for prediction
+├── requirements.txt # Python dependencies
+└── README.md # Project documentation
+
+
+---
 
 ## Getting Started
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/ghostlens-xai-threat-detection.git
 cd ghostlens-xai-threat-detection
 
-Set up your environment
+2. Set up your environment
 python -m venv venv
-.\venv\Scripts\activate   # For Windows
+.\venv\Scripts\activate        # On Windows
+# Or: source venv/bin/activate  # On macOS/Linux
 
-Install dependencies
+3. Install dependencies
+
 pip install -r requirements.txt
-If requirements.txt doesn't exist yet:
-pip install pandas numpy matplotlib scikit-learn shap lime
 
-Launch Jupyter Notebook
-jupyter notebook
+4. Train the model (optional)
+Run the training notebook in the notebooks/ directory to retrain and export your model.
 
-Roadmap
-•	Load and clean dataset
-•	Analyze label distribution and feature types
-•	Handle missing values and duplicates
-•	Build baseline ML models (Random Forest, Isolation Forest)
-•	Add SHAP and LIME explanations
-•	Package into reusable components
-•	Build lightweight web app (Streamlit or Flask)
-•	
-License
-This project is licensed under the MIT License.
+5. Run the web app
+streamlit run app.py
+Then open your browser at http://localhost:8501
+
+Deployment
+To deploy online, you can use Streamlit Community Cloud. It's free, quick to set up, and perfect for showcasing projects like this.
+
+Next Steps
+Expand support for other attack types in CICIDS2017
+
+Improve explanation modules with SHAP visualizations
+
+Add a real-time detection prototype using packet capture tools
+
+Package as a CLI tool or microservice for SOC use
+
 
 Author
 Ousmane Barry, PhD
+Cybersecurity | AI/ML
 
