@@ -55,11 +55,10 @@ ghostlens-xai-threat-detection/
 
 ### 1. Clone the repository
 
-```bash
 git clone https://github.com/yourusername/ghostlens-xai-threat-detection.git
 cd ghostlens-xai-threat-detection
 
-### **2. Set up your environment**
+### 2. Set up your environment
 python -m venv venv
 .\venv\Scripts\activate        # On Windows
 # Or: source venv/bin/activate  # On macOS/Linux
