@@ -59,32 +59,29 @@ ghostlens-xai-threat-detection/
 git clone https://github.com/yourusername/ghostlens-xai-threat-detection.git
 cd ghostlens-xai-threat-detection
 
-2. Set up your environment
+### 2. Set up your environment
 python -m venv venv
 .\venv\Scripts\activate        # On Windows
 # Or: source venv/bin/activate  # On macOS/Linux
 
-3. Install dependencies
+### 3. Install dependencies
 
 pip install -r requirements.txt
 
-4. Train the model (optional)
+### 4. Train the model (optional)
 Run the training notebook in the notebooks/ directory to retrain and export your model.
 
-5. Run the web app
+### 5. Run the web app
 streamlit run app.py
 Then open your browser at http://localhost:8501
 
-Deployment
+## Deployment
 To deploy online, you can use Streamlit Community Cloud. It's free, quick to set up, and perfect for showcasing projects like this.
 
-Next Steps
+## Next Steps
 Expand support for other attack types in CICIDS2017
-
 Improve explanation modules with SHAP visualizations
-
 Add a real-time detection prototype using packet capture tools
-
 Package as a CLI tool or microservice for SOC use
 
 
